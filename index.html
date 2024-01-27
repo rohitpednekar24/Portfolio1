@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Rohit Pednekar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Rohit Pednekar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./Files/pfp-modified.png " alt="Rohit Pednekar Profile Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello World!, I'm</p>
+            <h1 class="title">Rohit Pednekar</h1>
+            <p class="section_text_p2">FrontEnd Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Files/RohitPednekar.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./Files/linkedin.png" alt="LinkedIn Profile" class="icon"
+                    onclick="location.href='https://linkedin.com/in/rohitpednekar24'">
+                <img src="./Files/github.png" alt="Github Profile" class="icon"
+                    onclick="location.href='https://github.com/in/rohitpednekar24'">
+            </div>
+
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get to Know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./Files/pfp2.jpg" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Files/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p> SSC <i>85.00%</i> <br> HSC <i>70.31% </i><br> B.Tech <i> 76.56% </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello, world! I'm Rohit Pednekar, a recent graduate with a burning passion for technology and a
+                        focus on becoming a FrontEnd Developer. Armed with a solid educational background and a hunger
+                        for continuous learning, I am enthusiastic about leveraging my skills to contribute to dynamic
+                        and innovative projects.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./Files/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section_text_p1">My</p>
+        <h1 class="title">Tecnhical Skills</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skill-sub-title">FrontEnd Development</h3>
+                    <div class="article-container">
+                          <article>
+                            <img src="./Files/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <progress value="100" max="100"></progress>
+                            </div>
+                          </article>
+                          <article>
+                            <img src="./Files/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <progress value="100" max="100"></progress>
+                            </div>
+                          </article>
+                          <article>
+                            <img src="./Files/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <progress value="70" max="100"></progress>
+                            </div>
+                          </article>
+                          <article>
+                            <img src="./Files/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>JQuery</h3>
+                                <progress value="60" max="100"></progress>
+                            </div>
+                          </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">BackEnd Development</h3>
+                    <div class="article-container">
+                          <article>
+                            <img src="./Files/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>Oracle SQL</h3>
+                                <progress value="90" max="100"></progress>
+                            </div>
+                          </article>
+                          <article>
+                            <img src="./Files/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <progress value="80" max="100"></progress>
+                            </div>
+                          </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img src="./Files/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
