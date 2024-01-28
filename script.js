@@ -26,21 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
     
         skillContainers.forEach(container => {
             const containerCategory = container.getAttribute('data-category');
-
-            if (category === 'all' || category === 'frontend' || category === 'backend') {
-                document.getElementById('projects').classList.remove('hide-projects');
-            } else {
-                document.getElementById('projects').classList.add('hide-projects');
-            }
     
             if (category === 'all' || category === containerCategory) {
                 container.style.display = 'flex';
             } else {
                 container.style.display = 'none';
             }
-            
-        });
-    }
+        });
+    }
 });
 
 // XMLDocument
