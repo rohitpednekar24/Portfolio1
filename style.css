@@ -329,7 +329,8 @@ section {
 
 .filter-buttons {
     text-align: center;
-    /* gap: 2.5rem; */
+    letter-spacing: 2px;
+    word-spacing: 15px;
 }
 
 .skill-sub-title {
