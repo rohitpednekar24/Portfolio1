@@ -329,6 +329,7 @@ section {
 
 .filter-buttons {
     text-align: center;
+    /* gap: 2.5rem; */
 }
 
 .skill-sub-title {
