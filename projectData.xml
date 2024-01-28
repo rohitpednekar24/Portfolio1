@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projects>
+	<project id="be129">
+
+		<title>Smart Blindstick</title>
+		<description>Developed a cutting-edge smart blind stick utilizing Raspberry pi and ultrasonic sensors.
+                            Implement object detection capabilities using YOLO (You Only Look Once) algorithm,
+                            enabling the device to identify obstacles in real-time, ensuring enhanced safety and
+                            navigation for visually impaired individuals.</description>
+		
+		
+	</project>
+	<project id="be130">
+		
+		<title>Ultrasonic Sensor</title>
+		<description>Employ the sensor to accurately measure the distance between two objects, while
+                            dynamically displaying the calculated distances on an LCD panel, ensuring real-time
+                            monitoring and precise distance visualization.</description>
+		
+	</project>
+	
+
+</projects>

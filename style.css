@@ -454,3 +454,31 @@ footer{
 footer p{
     text-align: center;
 }
+
+/* table */
+
+table{
+    background: white;
+    border-spacing: 15px;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    height: 300px;
+    width: auto;
+    align-items: center;
+    
+}
+th, td {
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-radius: 2rem;
+    border-color: rgb(163, 163, 163);
+    padding: 15px; /* Adjust as needed for spacing inside cells */
+}
+
+/* Add styles for header cells if needed */
+th {
+    background-color: rgb(200, 200, 200);
+    font-weight: bold;
+    border-radius: 2rem;
+}

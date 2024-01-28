@@ -89,7 +89,7 @@
         <p class="section_text_p1">My</p>
         <h1 class="title">Tecnhical Skills</h1>
         <div class="filter-buttons">
-            <a href="#javascript:void(0)" class="filter-btn active" data-category="all">All</a>
+            <a href="#skills" class="filter-btn active" data-category="all">All</a>
             <a href="#javascript:void(0)" class="filter-btn" data-category="frontend">Frontend</a>
             <a href="#javascript:void(0)" class="filter-btn" data-category="backend">Backend</a>
         </div>
@@ -156,15 +156,17 @@
      
         <img src="./Files/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
-    <section id="projects" class="hide-projects">
-
-
-        
+    <section id="projects" class="hide-projects">    
         <p class="section_text_p1">Browse My</p>
         <h1 class="title">Projects</h1> 
       <div class="skill-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
+        <div class="about-containers" id="cont">
+            <div>
+                <button type="button" class="button" onclick="loadXMLDoc()">
+                    Get Employees Details
+                </button>
+            </div>
+          <!-- <div class="details-container color-container">
             <div class="article-container">
                         <img src="./Files/project-1.jpg" alt="Project 1" class="project-img" />
                     </div>
@@ -188,7 +190,7 @@
                             dynamically displaying the calculated distances on an LCD panel, ensuring real-time
                             monitoring and precise distance visualization. </p>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 

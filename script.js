@@ -42,3 +42,51 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+// XMLDocument
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Fetch the XML file
+    fetch('projectData.xml')
+        .then(response => response.text())
+        .then(xmlString => {
+            // Parse the XML
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(xmlString, 'application/xml');
+
+            // Call the function to process the XML
+            projectDetails(xmlDoc);
+        })
+        .catch(error => console.error('Error fetching XML:', error));
+});
+
+function projectDetails(xml) {
+    let i;
+    let table =
+        `<table>
+            <tr>
+                <th>Title</th><th>Description</th>
+                
+            </tr>`;
+    let projects = xml.getElementsByTagName("project");
+
+    // Loop through each project
+    for (i = 0; i < projects.length; i++) {
+        let title = projects[i].getElementsByTagName("title")[0].textContent;
+        let description = projects[i].getElementsByTagName("description")[0].textContent;
+        
+
+        // Append a new row to the table for each project
+        table += `<tr>
+                    <td>${title}</td> 
+                    <td>${description}</td>
+                    
+                  </tr>`;
+    }
+
+    table += `</table>`;
+
+    // Print the xml data in table form
+    document.getElementById("cont").innerHTML = table;
+}
+
