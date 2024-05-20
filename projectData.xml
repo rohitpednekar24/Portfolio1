@@ -3,7 +3,7 @@
 	<project id="be129">
 
 		<title>Employee Management System</title>
-		<description>1. Developed Employee Management System with the help of Java.<br>
+		<description>1. Developed Employee Management System with the help of Java.
 2. Performed CRUD operations on the the employees.</description>
 		
 		
@@ -11,8 +11,8 @@
 	<project id="be130">
 		
 		<title>ToDo Application</title>
-		<description>1. Developed a ToDo application using C# Web API.<br>
-2. Able to perform CRUD operations on ToDo List, categorizing them into Work and Personal views.</description>
+		<description>1. Developed a ToDo application using C# Web API.
+			2. Able to perform CRUD operations on ToDo List, categorizing them into Work and Personal views.</description>
 		
 	</project>
 	
